@@ -10,11 +10,8 @@ def about_view(request):
 def resume_view(request):
     return render(request, 'resume/resume.html')
 
-def services_view(request):
-    return render(request, 'resume/services.html')
-
-def portfolio_view(request):
-    return render(request, 'resume/portfolio.html')
+def project_view(request):
+    return render(request, 'resume/project.html')
 
 def contact_view(request):
     return render(request, 'resume/contact.html')

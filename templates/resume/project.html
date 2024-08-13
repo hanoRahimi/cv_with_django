@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+<main class="main">
+
+  <!-- Portfolio Details Section -->
+  <section id="portfolio-details" class="portfolio-details section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>جزئیات پروژه</h2>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-8">
+          <div class="portfolio-details-slider swiper init-swiper">
+
+            <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+            <div class="swiper-wrapper align-items-center">
+
+              <div class="swiper-slide">
+                <img src="{% static 'img/portfolio/img1.png' %}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{% static 'img/portfolio/img2.png' %}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{% static 'img/portfolio/img3.png' %}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{% static 'img/portfolio/img4.png' %}" alt="">
+              </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: Web Develope</li>
+              <li><strong>Client</strong>: ASU Company</li>
+              <li><strong>Project date</strong>: 01 March, 2022</li>
+              <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+            </ul>
+          </div>
+          <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+            <h2>جزئیات پروژه</h2>
+            <p>پروژه ای با جنگو که قالب آن آماده گرفته شده و بک اند آن با جنگو نوشته شده است.
+              این پروژه برای رزومه استفاده شده است.
+              و مهارت ها، توانایی ها، زبان ها، تحصیلات و ... در آن گنجانده شده است.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section><!-- /Portfolio Details Section -->
+
+</main>
+
+{% endblock %}
