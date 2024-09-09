@@ -1,2 +1,2 @@
 # cv_me
- This is my resume website
+This project is written with Django and a ready-made template, and this project is for testing.
